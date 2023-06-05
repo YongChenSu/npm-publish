@@ -1,5 +1,5 @@
 {
-  "name": "@coding-climber/function-benchmarker",
+  "name": "@yong945/function-benchmarker",
   "version": "1.0.0",
   "description": "Shared components, function-benchmarker",
   "main": "dist/index.js",
@@ -8,6 +8,7 @@
     "build": "del dist && rollup -c",
     "test": "jest"
   },
+  "type": "module",
   "engines": {
     "node": ">=16.13.1",
     "npm": ">=8.1.2"
