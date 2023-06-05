@@ -1,5 +1,5 @@
 // ./src/index.js
-const benchmarker = (testFunction, times = 1000000) => {
+export const benchmarker = (testFunction, times = 1000000) => {
 	if (typeof testFunction !== 'function') {
 		throw new Error('Did not provide a valid function for test.');
 	}
@@ -14,8 +14,10 @@ const benchmarker = (testFunction, times = 1000000) => {
 
 	const endTime = new Date().getTime();
 
+	console.log(endTime - startTime);
 	return endTime - startTime;
 };
 
-// 匯出函式
-module.exports = benchmarker;
+export const printString = (string) => {
+	console.log('Hello World', string);
+}
